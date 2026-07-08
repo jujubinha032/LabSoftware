@@ -35,9 +35,13 @@ let peso = 70;
 
 let imc = peso / (altura * altura);
 
+//Para apresentar os dados em console.log temos duas formas:
+
+//Forma 01, padrão linguagem C (não é recomendado em JavaScript):
 console.log("IMC de altura: %d e peso: %d é igual a %d ", altura, peso, imc);
 
-// Usando template literals com ${}
-console.log(
-  `IMC de altura: ${altura} e peso: ${peso} é igual a ${(peso / (altura * altura)).toFixed(2)}`,
-);
+//Forma 02 Template String (recomendado)
+//A string fica entre `` ao invés de "" e as variáveis ficam dentro da notação ${}
+console.log(`IMC de altura: ${altura} e peso: ${peso} é igual a ${imc}`);
+//Podem ser feitas operações de lógica dentro da notação ${}
+console.log(`IMC de altura: ${altura} e peso: ${peso} é igual a ${peso / (altura * altura)}`);
