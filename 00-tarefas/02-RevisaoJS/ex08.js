@@ -8,3 +8,14 @@
 
 // Maior que 28 -> Muito quente
 
+let temperatura = 49
+
+if( temperatura <= 15){
+    console.log(`frio`)
+ }
+ else if (`temperatura = 15 && temperatura <=28 `){
+    console.log(`agradavel`)
+ }
+ else{
+    console.log(`muito quente`)
+ }

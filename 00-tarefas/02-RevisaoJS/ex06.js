@@ -8,4 +8,14 @@
 
 // Mostre o preço final juntamente com a possibilidae da pessoa poder ou não comprar o produto.
 
+let produto = 120
+ let desconto = 0.2
+ let carteira = 30
 
+ let valor = produto - (produto * desconto)
+ if(carteira < valor){
+    console.log(`Saldo insuficiente o preco final com seu desconto e: ${valor}`)
+ }
+ else{
+    console.log(`saldo suficeinte`)
+    }
